@@ -21,6 +21,8 @@ class primeTestCases(object):
     def test_list_prime_check_613_is_prime(self):
         sixthirteen = self.prime.list_prime(615)
         self.assertIn(613, sixthirteen)
+    def test_list_prime_check_if_0_is_a_prime_number(self):
+        self.assertNotIn(0, self.prime.list_prime(5))
 
 
 if __name__ == '__main__':
