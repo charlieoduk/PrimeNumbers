@@ -13,19 +13,10 @@ class primeTestCases(object):
     def setUp(self):
         self.prime = PrimeNumbers.list_prime()
 
-    def test_list_prime_prints_prime_numbers(self):
-        pass
-
-    def test_list_prime_check_if_1_is_prime(self):
-        pass
-
-    def test_list_prime_check_if_negative_number_is_prime(self):
-        pass
-
-    def test_list_prime_check_when_string_is_entered(self):
-        pass
-
-    def test_list_prime_check_when_number_entered_is_decimal(self):
+    
+    def test_list_prime_check_expected_output(self):
+        result = self.prime.list_prime(6)
+        self.assertEqual([2, 3, 5], result)
         pass
 
 
