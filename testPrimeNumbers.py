@@ -17,7 +17,10 @@ class primeTestCases(object):
     def test_list_prime_check_expected_output(self):
         result = self.prime.list_prime(6)
         self.assertEqual([2, 3, 5], result)
-        pass
+    
+    def test_list_prime_check_613_is_prime(self):
+        sixthirteen = self.prime.list_prime(615)
+        self.assertIn(613, sixthirteen)
 
 
 if __name__ == '__main__':
