@@ -27,5 +27,8 @@ class primeTestCases(object):
     def test_list_prime_check_when_you_get_negative_input(self):
         self.assertFalse(self.prime.list_prime(-5))
 
+    def test_list_prime_check_if_string_entered(self):
+        self.assertRaises(ValueError, self.prime.list_prime, "5")
+
 if __name__ == '__main__':
     unittest.main()
