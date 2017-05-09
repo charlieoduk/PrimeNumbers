@@ -3,7 +3,7 @@ import PrimeNumbers
 
 
 
-class primeTestCases(object):
+class primeTestCases(unittest.TestCase):
     def setUp(self):
         self.prime = PrimeNumbers.num_types()
 
